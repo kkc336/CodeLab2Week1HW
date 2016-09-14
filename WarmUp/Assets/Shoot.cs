@@ -31,7 +31,7 @@ public class Shoot : MonoBehaviour {
 		}
 
 
-		InvokeRepeating ("Fire",0.5f, 0.5f);
+		InvokeRepeating ("Fire",0.5f, 0.25f);
 
 
 
