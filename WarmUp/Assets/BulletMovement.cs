@@ -13,8 +13,8 @@ public class BulletMovement : MonoBehaviour {
 
 	void FixedUpdate () {
 		
-		//print (LookAt.direction);
-		transform.position = transform.position +  transform.right* -1f * speed;
+
+		transform.position = transform.position +  transform.right * speed;
 
 	}
 }

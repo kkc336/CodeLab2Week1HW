@@ -10,7 +10,9 @@ public class Shoot : MonoBehaviour {
 	private string bulletPath = "prefab/BlueJewel";
 
 	void Start () {
-		
+
+	
+
 		bullets = new List<GameObject> ();
 
 		GameObject folder = new GameObject ("Bullets_Folder");
@@ -31,6 +33,9 @@ public class Shoot : MonoBehaviour {
 
 		InvokeRepeating ("Fire",0.5f, 0.5f);
 
+
+
+
 	}
 	
 
@@ -43,6 +48,7 @@ public class Shoot : MonoBehaviour {
 				bullets [i].transform.position = transform.position;
 				bullets [i].transform.rotation = transform.rotation;
 				bullets [i].SetActive (true);
+				bullets [i].GetComponent<Animation> ().Play ("JewelIdle");
 
 				break;
 

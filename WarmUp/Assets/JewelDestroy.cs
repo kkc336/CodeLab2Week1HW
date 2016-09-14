@@ -5,9 +5,14 @@ public class JewelDestroy : MonoBehaviour {
 
 	public float existTime = 3f;
 
+
+
+
 	void OnEnable(){
 		
 		Invoke ("Destroy", existTime);
+
+
 
 	}
 
